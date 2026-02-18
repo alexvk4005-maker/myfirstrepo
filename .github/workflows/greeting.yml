@@ -5,17 +5,16 @@ on:
     branches: [ main ]
 
 jobs:
-  say :
+  say:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
+
       - name: Say Hello
-        
-      run: |
+        run: |
           echo "Hello From GitHub Actions! 🎉"
           echo "Learning GitHub Actions"
           date
           pwd
-          ls 
-
-
+          ls
